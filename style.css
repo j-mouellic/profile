@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Mulish:wght@300;400&display=swap');
+
+/* ------------------------------------------------------
+----------------------- BODY, DIV ------------------------ */
+
+body {
+  box-sizing: border-box;
+  color: #B7B78A;
+  background-color: #c9d4d8;
+  font-family: Mulish;
+}
+
+.container {
+  margin: 0 auto;
+  width: 500px;
+  text-align: center;
+}
+
+.card{
+  border-radius: 15px;
+  background-color: #ffffff;
+  padding: 40px;
+  box-shadow: 0 0 15px #a7a5a5;
+  margin: 20px 0;
+}
+
+/* ----------------------------------------------------------
+-------------------------- FONTS ------------------------- */
+
+h1, h2{
+  font-family: Merriweather;
+  font-size: 36px;
+  color: #658864;
+}
+
+#introduction-p{
+  margin-bottom: 40px;
+}
+
+
+/* -----------------------------------------------------
+-------------- IMG, LIST, LINKS, BUTTON -------------- */
+
+.img-circle{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0 0 4px#000000;
+}
+
+.list-inline > li{
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.list-inline{
+  list-style: none;
+  padding-left: 0;
+}
+
+#btn-black{
+  padding: 10px 15px;
+  background-color: black;
+  color: #c9d4d8;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 15px;
+  box-shadow: 0 0 4px #a7a5a5;
+}
+
+.card i{
+  font-size: 1.5em;
+  background-color: #000000;
+  color: #c9d4d8;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 4px #a7a5a5;
+}
+
+/* -----------------------------------------------------
+--------------------- HOVER EFFECT ------------------- */
+
+#btn-black:hover,
+.card i:hover {
+  background-color: #658864;
+  color: black;
+  transition: ease 0.7s;
+  cursor: pointer;
+}
+
+
+/* -----------------------------------------------------
+-------------------- MEDIA QUERIES -------------------- */
+
+@media (max-width: 960px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* Pour un écran < 720px, cette classe CSS s'applique */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* Pour un écran < 540px, cette classe CSS s'applique */
+  .container {
+    width: 300px;
+  }
+}
